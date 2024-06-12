@@ -2,7 +2,7 @@
 # coding: utf-8
 
 # run
-# "C:\Users\Shithi.Maitra\Unilever Codes\Scraping Scripts\stock_description_multiprocess"
+# "C:\Users\Shithi.Maitra\Unilever Codes\Scraping Scripts\stock_description_multiprocess.py"
 
 # import
 from selenium import webdriver
