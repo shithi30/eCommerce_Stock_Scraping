@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
-
-
 # import
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -18,10 +15,6 @@ import win32com.client
 from pretty_html_table import build_table
 import time
 from datetime import datetime
-
-
-# In[2]:
-
 
 ## Chaldal ##
 def scrape_chaldal_thread(brands, lock, df_acc): 
@@ -176,7 +169,7 @@ def scrape_chaldal_thread(brands, lock, df_acc):
     # close window
     driver.close()
 
-# caller
+## caller
 def scrape_chaldal():
     
     # accumulators
@@ -238,28 +231,19 @@ def scrape_chaldal():
     
     return res_df
 
-
-# In[3]:
-
-
-# main/summary
+## main/summary
 smry_df = scrape_chaldal()
 smry_df
 
-
-# In[4]:
-
-
-# email
+## email
 ol = win32com.client.Dispatch("outlook.application")
 olmailitem = 0x0
 newmail = ol.CreateItem(olmailitem)
 
 # subject, recipients
 newmail.Subject = 'Chaldal Stocks ' + time.strftime('%d-%b-%y')
-# newmail.To = 'shithi.maitra@unilever.com'
 newmail.To = 'mehedi.asif@unilever.com'
-# newmail.CC = 'mehedi.asif@unilever.com; zakeea.husain@unilever.com; rakaanjum.unilever@gmail.com; nazmussajid.ubl@gmail.com'
+newmail.CC = 'zakeea.husain@unilever.com; rakaanjum.unilever@gmail.com; nazmussajid.ubl@gmail.com, shithi.maitra@unilever.com'
 
 # body
 newmail.HTMLbody = f'''
@@ -281,10 +265,3 @@ newmail.Attachments.Add(filename)
 # display, send
 newmail.Display()
 newmail.Send()
-
-
-# In[ ]:
-
-
-
-
