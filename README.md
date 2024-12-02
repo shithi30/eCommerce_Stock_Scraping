@@ -1,6 +1,6 @@
 This repository helped Unilever make data-driven decisions in the following ways:
 - Multiprogramming enabled faster, real-time stock scraping from eCommerce channel platforms - helping Supply Chain to replenish ASAP.
-- Fetching descriptions enabled the Brand Marketing team to correct/supply improper/missing descriptions under SKUs on display.
+- Fetching descriptions enabled the Brand Marketing team to correct (or, supply) improper/missing descriptions under SKUs on display.
 
 ### Daily Stock Reporting
 <p align="center">
