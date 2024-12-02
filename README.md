@@ -2,6 +2,8 @@ This repository helped Unilever make data-driven decisions in the following ways
 - Multiprogramming enabled faster, real-time stock scraping from eCommerce channel platforms - helping Supply Chain to replenish ASAP.
 - Fetching descriptions enabled the Brand Marketing team to correct (or, supply) improper/missing descriptions under SKUs on display.
 
+**Tech Stack:** Language - `Python` , Libs - `Selenium, bs4, multiprocessing, threading` , Data Processing - `Pandas, DuckDB` , Communication - `win32com`
+
 ### Daily Stock Reporting
 <p align="center">
 <img width="815" alt="fl1" src="https://github.com/shithi30/Multiprogramming_for_eCommerce_Stock_Scraping/assets/43873081/920fc641-4f5e-4bf7-9065-c2f4a8d0ecfa">
